@@ -1,27 +1,15 @@
 import javax.swing.JOptionPane;
- 
-/**
- *
- * @author praktikum
- */
+
 public class Fibonacci {
- 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+        int deret=Integer.parseInt(JOptionPane.showInputDialog("Masukkan berapa deret Fibonacci: "));
         int a=0;
         int b=1;
-        int n=Integer.parseInt(JOptionPane.showInputDialog("Input: "));
- 
-        System.out.println("Input: " + n);
- 
-        for(int i=0; i < n; i++){
-            System.out.print("" + a);
+        System.out.print(deret+" deret Fibonacci: " );
+        for (int i=0;i<deret;i++){
+            System.out.print(a+" ");
             a=a+b;
-            b=a-b;
+            b=a-b;   
         }
-        System.out.println("");
     }
- 
 }
